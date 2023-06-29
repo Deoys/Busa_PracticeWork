@@ -1,0 +1,46 @@
+@media screen and (max-width: 1140px){
+    .ExchangeBox{
+        width: 195px;
+    }
+    .AccountName .NameBalance h3{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }    
+    #chartContainer{
+        /* height: 499px; */
+    }
+
+    .symbol{
+        height: 84px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .navBarCur{
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .CurrTab{
+        position: relative;
+        height: 100%;
+    }
+
+    .CurrTab label{
+        height: fit-content;
+    }
+
+    .CurrTab label:nth-child(n+10){
+        display: none;
+    }
+
+    .firtPoint{
+        position: absolute;
+        bottom: 0;
+    }
+
+    #OtheCurr{
+        width: 215px;
+    }
+}

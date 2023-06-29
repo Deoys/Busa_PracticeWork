@@ -1,0 +1,593 @@
+.Bot{
+    border-radius: 7px;
+    background: var(--light-low-contrast, #FFF);
+    box-shadow: 0px 2px 8px 0px rgba(54, 106, 243, 0.12);
+    flex-direction: column;
+}
+
+.shortInfo{
+    display: flex;
+    padding: 28px 40px 20px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    border-bottom: 1px solid var(--light-base-border, rgba(0, 0, 0, 0.10));
+}
+
+.linkSerNum, .leftItem, .scriptBot, .rightIteam, .logoCoin, .headerInfoRow1, .MetaInfo{
+    display: flex;
+    align-items: center;
+
+}
+
+.HeaderInfo, .MetaInfo{
+    width: 100%;
+}
+
+.HeaderInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.headerInfoRow1{
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.leftItem{
+    gap: 24px;
+}
+
+.linkSerNum{
+    gap: 8px;
+}
+
+.linkSerNum p{
+    color: var(--light-main-font, #124);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.scriptBot{
+    gap: 12px;
+}
+
+.CheckBoxTougel{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--light-top-contrast, #000);
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.ActionButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+}
+
+.rightIteam{
+    gap: 40px;
+}
+
+.costCoin{
+    display: flex;
+    gap: 4px;
+    color: var(--light-main-font, #124);
+    text-align: right;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.costCoin div{
+    opacity: 0.3;
+}
+
+.costCoin span{
+    opacity: 1;
+    text-align: right;   
+}
+
+.costCoin img{
+    display: none;
+}
+
+.setingIcon{
+    display: none;
+    border-radius: 4px;
+    padding: 4px 4px 2px 4px;
+    background: rgb(0, 0, 0, .1);
+}
+
+.logoCoin{
+    display: flex;
+    gap: 6px;
+    text-transform: uppercase;
+}
+
+.MetaInfo{
+    justify-content: space-between;
+}
+
+.CountOrder, .executedOrder{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--light-main-font, #124);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.56px;
+}
+
+.MenuOrder{
+    margin-left: 8px;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.MenuOrder div{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    opacity: 0.3;
+    background-color: #000;
+}
+
+.executedOrder a{
+    margin-left: 8px;
+}
+.MetaInfo a{
+    color: var(--light-main-font, #124);
+    opacity: 0.3;
+    font-size: 13px;
+    line-height: 15px;
+    text-decoration: none;
+    padding: 2px;
+    border-bottom: 1px dashed;
+}
+
+.DailyStatus, .GeneralStatus{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: flex-end;
+}
+
+.DailyStatus div, .GeneralStatus div{
+    color: var(--light-main-font, #124);
+    opacity: .3;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.DailyStatus span, .GeneralStatus span{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.DailyStatus span{
+    color: var(--light-negative-600, #F02030);
+}
+
+.GeneralStatus span{
+    color: var(--light-positive-600, #1B8900);
+}
+
+
+.BalanceBotInfo{
+    position: relative;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--light-base-border, rgba(0, 0, 0, 0.10));
+}
+
+.BalanceBotInfo>div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.BalanceBotInfo>div>div:first-child, .tagSumm div{
+    color: var(--light-main-font, #124);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    opacity: .5;
+}
+
+.BalanceBotInfo .infoSimbol{
+    display: flex;
+    color: var(--light-main-font, #124);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    gap: 2px;
+}
+
+.CurrentSumm .infoSimbol{
+    gap: 10px;
+}
+
+.tagSumm{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.tagSumm div{
+    text-transform: uppercase;
+}
+
+.tagSumm span{
+    color: var(--light-negative-600, #F02030);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.ExtraSale a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: .5;
+    text-decoration: none;
+}
+
+.ExtraSale a>span{
+    border-bottom: 1px dashed;
+    color: #000;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.HideActions{
+    position: absolute;
+    bottom: -17px;
+    display: flex;
+    padding: 8px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--light-base-border, rgba(0, 0, 0, 0.10));
+    background: var(--light-low-contrast, #FFF);
+    
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.HideActions span{
+    color: var(--light-main-font, #124);
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
+    opacity: .5;
+}
+
+.HideActions:hover{
+    cursor: pointer;
+}
+
+.ActionsBot{
+    display: block;
+    padding: 25px 40px 20px 40px;
+}
+
+.infActions{
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.boxInfoAction{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nameInfo{
+    color: var(--light-main-font, #124);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    opacity: .5;
+}
+
+.ColumnsAction{
+    display: flex;
+    gap: 2px;
+    width: fit-content;
+}
+
+.columAct{
+    display: flex;
+    padding: 12px 4px;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 5px;
+    background: var(--light-low-contrast, #FFF);
+}
+
+.columAct:hover{
+    border-radius: 4px;
+    border: 1px solid var(--light-basic-primary, rgba(0, 34, 136, 0.233));
+    cursor: pointer;
+}
+
+
+.columAct>div:first-child{
+    padding: 0px 12px;
+
+    color: var(--light-main-font, #124);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    opacity: .3;
+}
+.columAct>div{
+    padding: 14px 0px 10px 12px;
+}
+.columAct>div:nth-child(2){
+    padding: 10px 12px;
+}
+
+.row{
+    color: var(--light-main-font, #124);
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.row p:first-child{
+    opacity: .75;
+}
+
+.row p:last-child{
+    opacity: 0.30000001192092896;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.pricerow p:last-child{
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.pricerow{
+    width: 9.45vw;
+    min-width: 100px;
+    border-radius: 4px;
+    background: var(--light-top-contrast, #0000001a);
+}
+
+.pricerow .row{
+   display: flex;
+   justify-content: space-between;
+}
+
+.pricerow.activ{
+    background: linear-gradient(to right, #CFB 0%, #CFB 20%, #0000001a 20%, #0000001a 100%);
+}
+
+.Amountrow.activ *{
+    color: var(--light-positive-600, #1B8900);
+}
+
+.Amountrow.activ p:last-child{
+    opacity: 1;
+}
+
+.rowInfoAct{
+    display: none;
+}
+
+.Bot.Colum{
+    position: relative;
+    flex-direction: row;
+}
+
+.Bot.Colum .shortInfo{
+    width: 45%;
+    padding: 20px 40px;
+    justify-content: space-between;
+}
+
+.Bot.Colum .shortInfoTop{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.Bot.Colum .BalanceBotInfo{
+    border: none;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+}
+
+.Bot.Colum .BalanceBotInfo button{
+    display: none;
+}
+
+.Bot.Colum .leftItem{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Bot.Colum .rightIteam{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.Bot.Colum .MetaInfo{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.Bot.Colum .DailyStatus{
+    display: none;
+}
+
+.Bot.Colum .ActionsBot{
+    width: 55%;
+}
+
+.Bot.Colum .infActions{
+    flex-direction: column;
+    gap: 28px;
+}
+
+
+
+.Bot.Colum .BalanceBotInfo>div{
+    width: fit-content;
+    flex: 30%;
+}
+
+.Bot.Colum .BalanceBotInfo .ExtraSale{
+    align-items: flex-end;
+}
+
+.Bot.Colum .ColumnsAction{
+    flex-direction: column;
+    width: 100%;
+}
+
+.Bot.Colum .columAct{
+    border-top: 1px #000 dashed;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Bot.Colum .columAct>div .row>p:first-child, .Bot.Colum .columAct>div .row>img{
+    display: none;
+}
+
+.Bot.Colum .pricerow{
+    padding: 0;
+    width: fit-content;
+    text-align: center;
+}
+
+.Bot.Colum .columAct>div:nth-child(n+3){
+    min-width: 12vw;
+}
+
+.Bot.Colum .rowInfoAct>div .row>p:first-child{
+    display: block;
+}
+
+.Bot.Colum .rowInfoAct{
+    display: flex;
+    border: none;
+}
+
+.Bot.Colum .rowInfoAct p{
+    color: rgba(17, 34, 68, 0.75);
+    opacity: 1;
+}
+
+.BotColum{
+    display: none;
+}
+
+@media screen and (max-width: 640px){
+    .shortInfo{
+        padding: 28px 24px 20px 24px;
+    }
+    
+    .rightIteam{
+        gap: 20px;
+    }
+
+    .MetaInfo{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .DailyStatus, .scriptBot, .logoCoin{
+        display: none;
+    }
+    
+    .costCoin img, .setingIcon{
+        display: block;
+    }
+
+    .BalanceBotInfo{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .BalanceBotInfo>div{
+        width: fit-content;
+        flex: 30%;
+    }
+    .ExtraSale{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .shortInfo{
+        padding: 12px 12px 20px 12px;
+    }
+
+    .HeaderInfo{
+        gap: 8px;
+    }
+
+    .headerInfoRow1{
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .setingIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .BalanceBotInfo{
+        padding: 20px 12px 40px 12px;
+    }
+    .BalanceBotInfo>div{
+        width: fit-content;
+        flex: 40%;
+    }
+    .ExtraSale{
+        align-items: flex-end;
+        margin-right: 70px;
+    }
+    
+    .BalanceBotInfo>div:last-child{
+        align-items: flex-end;
+    }
+}

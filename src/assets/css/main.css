@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Golos Text';
+}
+
+body{
+    background-color: #F3F9FF;
+}
+
+.Switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 12px;
+  }
+
+  .Switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .demo {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 12px;
+    border: solid 1px #ccc;
+  }
+  
+  .demo:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: -2px;
+    top: -4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+    border: solid 2px #ccc;
+  }
+  
+  input:checked + .demo {
+    border-color: #6F42C1;
+    background-color: #FFFFFF;
+  }
+  
+  input:focus + .demo {
+    box-shadow: 0 0 1px #6F42C1;
+  }
+  
+  input:checked + .demo:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+
+    background-color: #6F42C1;
+    border-color: #6F42C1;
+  }
+
+.Demotoggel{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Demotoggel p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height, or 117% */
+
+    letter-spacing: 0.04em;
+
+    /* Light/Top Contrast */
+
+    color: #ccc;
+}
+
+.TopLine{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.InfoLogoExchange{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.Exchange{
+    display: flex;
+    gap: 12px;
+}
+
+.AddExchange{
+    width: 48px;
+    height: 100px;
+    background: #F3F9FF;
+    border: 1px dashed #A6B2D6;
+    box-shadow: 0px 2px 8px rgba(54, 106, 243, 0.12);
+    border-radius: 8px;
+    color: #366AF3;
+    font-size: 36px;
+}
+
+.ExchangeBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 312px;
+    height: 100px;
+    border-radius: 8px;
+    background: #F3F9FF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 8px rgba(54, 106, 243, 0.12);
+    padding: 20px 18px 20px 16px;
+    gap: 13px;
+}
+
+.first{
+    background: #002288;
+}
+
+.InfoLine{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ExchangeBox.first .NameBalance h3 {
+    color: #FFFFFF;
+}
+
+.ExchangeBox.first .cost span{
+    color: #FFFFFF; 
+}
+
+.ExchangeBox.first .cost p{
+    color: #FFFFFF;
+}
+
+.ExchangeBox.first .MoreInfoExchange span{
+    background:#FFFFFF;
+}
+
+.ExchangeBox .cost{
+    display: flex;
+    justify-content: space-between;
+}
+.ExchangeBox .cost span{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.MoreInfoExchange{
+    display: flex;
+    flex-direction: column;
+    width: 12px;
+    height: 10px;
+    gap: 2px;
+}
+
+.MoreInfoExchange span{
+    background: #112244;
+    border-radius: 10px;
+    height: 2px;
+    width: 100%;
+}
+
+.AccountName{
+    display: flex;
+    flex-direction: column;
+}
+
+.NameBalance{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.NameBalance h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #112244;
+}
+
+.cost{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.cost span{
+    color: #112244;
+}
+
+.cost p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+
+    color: #112244;
+}
+
+.InfoAccountBoard{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.CurrencyBoard{
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.Currency{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.infoCurrenc{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: #112244;
+    opacity: 0.5;
+}
+
+.infoCurrenc .cost span{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.04em;    
+    color: #112244;
+}
+
+.infoCurrenc .cost p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;    
+    color: #112244;
+}
+
+.Percent p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #F02030;
+}
+
+
+.UserIcon{
+    width: 48px;
+    height: 48px;
+    background: #366AF3;
+    border-radius: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+}
+.MainMenu{
+    display: flex;
+    margin-top: 8px;
+    padding-left: 40px;
+    gap: 12px;
+}
+.MenuPoint input[type=radio] {
+	display: none;
+}
+
+.MenuPoint input[type=radio]:checked + label {
+    color: #264AAA;
+	border-bottom: 2px solid #264AAA;
+}
+
+
+.buttonMenu{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    /* identical to box height, or 107% */
+
+    letter-spacing: 0.04em;
+    padding: 24px 20px;
+}
+
+footer{
+    width: 100%;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.infoBar{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.infoBar a{
+    width: fit-content;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #112244;
+    text-decoration: none;
+}
+
+.infBlok{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.Links{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Offert{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Offert >* {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #112244;
+
+    opacity: 0.5;
+}
+
+.Offert p:last-child{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+    color: #264AAA;
+    opacity: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.moreExchange, .BurgerMenu{
+    display: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+}
+
+.infoNavBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.linkNav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.linkPage{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #366AF3;
+    color: #366AF3;
+}
+
+.linkPage:last-child{
+    border: none;
+    cursor: default;
+    pointer-events: none;        
+    text-decoration: none;
+    color: #112244;
+}
+
+.linkNav>span{
+    font-size: 12px;
+    color: #112244;
+}
+
+.InfoBlock{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.InfoBlock>h2{
+    font-style: normal;
+    font-weight: 770;
+    font-size: 48px;
+    line-height: 48px;
+    color: #112244;
+}
+
+.addBotButton{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 20px;
+}
+
+#AddBot{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #112244;
+    background-color: transparent;
+    border-radius: 50%;
+    color: #112244;
+    font-size: 15px;
+}
+
+.AddBotLabel{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #112244;
+}
+
+#chartContainer{
+    border: 1px solid #8585863d;
+    border-radius: 2px;
+    margin: 20px 0px;
+    height: fit-content;
+    /* height: 725px; */
+}
+
+.AddBotMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #366AF3;
+
+    background: rgba(54, 106, 243, 0.15);
+    border-radius: 5px;
+}
+
+.navBarCur{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.symbol{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.CurrTab{
+    display: flex;
+}
+
+.firtPoint{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.BotViewSellect{
+    display: flex;
+}
+
+.BotViewSellect button{
+    cursor: pointer;
+    border: none;
+    padding: 12px;    
+    border: 1px solid #8585863d;
+    background-color: #FFFFFF;
+}
+
+.BotViewSellect button:first-child{
+    border-radius: 5px 0 0 5px;
+}
+.BotViewSellect button:last-child{
+    border-radius: 0 5px 5px 0;
+}
+
+.CurrTab input[type=radio] {
+    display: none;
+}
+
+.CurrTab label{
+    color: var(--light-basic-primary, #028);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.56px;
+    padding: 12px 8px;
+}
+
+.CurrTab input[type=radio]:checked + label {
+    border-radius: 4px;
+    background: #366AF3;
+    color:#FFF;
+    
+}
+
+#OtheCurr{
+    border-radius: 5px;
+    border: 1px solid var(--light-base-border, rgba(0, 0, 0, 0.10));
+    background: var(--light-widget-background, #FFF);
+    padding: 16px 20px;
+    width: 320px;
+    color: var(--light-main-font, #124);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+}
